@@ -9,43 +9,55 @@
     <script>
         // If-Else If-Else
 
-        // var marks = 5;
-        // if(marks > 80){
-        //     document.write("The student is first class.");
-        // }
-        // else if(marks>40){
-        //     document.write("The student is pass.");
-        // }
-        // else{
-        //     document.write("The sudent is fail.")
-        // }
+        var marks = 5;
+        if(marks > 80){
+            document.write("The student is first class.");
+        }
+        else if(marks>40){
+            document.write("The student is pass.");
+        }
+        else{
+            document.write("The sudent is fail.")
+        }
 
 
-        // Loops (While, For, )
-        // while loop (in this case the condition will be checked first and then it will procees to do operation )
+        
+        // Loops (While, For, Do-While)
 
-        var num =1;
+        // While Loop (In this case the condition will be checked first and then it will proceed to do operation)
+        var num = 11;
         while (num<=10){
             document.write(num+"<br>");
             num++;
-        }
-        // DO - While  Loop (In this case  the condition will be checked will be  checked after the opreation is executed atleast once )
+        } // No Output
+
+        // Do-While Loop (In this case the condition will be checked after the operation is executed atleast once)
         var num = 11;
-        do {
+        do{
             num++;
             document.write(num+"<br>");
-        }while (num<=10)
+        }while(num<=10) // Output = 12
 
+        // For Loop
         for (var num = 15; num <= 20; num++){
             document.write(num+"<br>");
-        }
-        // output = 15,16,17,18,q9,20
-        for (let rollno = 1;rollno<=10;rollno++){
-            if (rollno ==7){
-                break;
+        } // Output = 15, 16, 17, 18, 19, 20
+
+        // Continue (When applied inside a loop, if the condition meets it will skip that part and continue the loop)
+        for(let rollno = 1; rollno <= 10; rollno++){
+            if (rollno==5){
+                continue
             }
-        }
+            document.write(rollno + "<br>") 
+        } // Output = 1 2 3 4 6 7 8 9 10
+
+        // Break (When applied inside a loop, if the condition meets it will end the whole loop right there)
+        for(let rollno = 1; rollno <= 10; rollno++){
+            if (rollno==5){
+                break
+            }
+            document.write(rollno + "<br>")
+        } // Output = 1 2 3 4
     </script>
 </body>
-
 </html>
