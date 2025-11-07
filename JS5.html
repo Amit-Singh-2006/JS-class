@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // 1. Object literal
+        let footballer={
+            name : "Cristiano Ronaldo",
+            number : 7,
+            age : 38,
+            tag : "Best player on Earth",
+            intro:function(){
+                console.log(`The footballer with the number ${footballer.number} on this back. The greatest player in the history of football and the best player in the middle-east. His name is ${footballer.name}.`)
+            }
+        }
+        console.log(footballer);
+        console.log(footballer.number);
+        console.log(footballer["number"]);
+        console.log("The footballer with the number " + footballer.number + " on his back. The greatest player in the history of football. His name is " + footballer.name + ".")
+        footballer.intro();
+    </script>
+</body>
+</html>
