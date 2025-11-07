@@ -7,7 +7,10 @@
 </head>
 <body>
     <script>
+        // Alert
         alert("This is an alert message."); // Will only give one option which is Ok.
+        
+        // Confirm
         confirm("This is a confirmation message."); // Will give two options Ok and Cancel
         let result=confirm("This is a confirmation message."); // Will show an output based on which option the user chose
         if (result){
@@ -16,7 +19,11 @@
         else{
             document.write("You clicked on cancel.");
         }
+
+        // Prompt
+        let num1 = Number(prompt("Enter the first number.")); // Another type of pop-up box in which it asks for user input (prompt)
+        let num2 = Number(prompt("Enter the second number."));
+        document.write(num1 + num2)
     </script>
 </body>
-
 </html>
