@@ -22,6 +22,25 @@
         console.log(footballer["number"]);
         console.log("The footballer with the number " + footballer.number + " on his back. The greatest player in the history of football. His name is " + footballer.name + ".")
         footballer.intro();
+
+        let dancer={}
+        dancer.name = "Michael Jackson";
+        console.log(dancer.name);
+
+
+
+        // 2. Object Constructor
+        let cricketer = new Object();
+        cricketer.name = "Virat Kohli";
+        console.log(cricketer);
+
+
+
+        // 3. Object Create
+        let basketball_player = Object.create(cricketer);
+        console.log(basketball_player.name)
+        basketball_player.name = "Steph Curry";
+        console.log(basketball_player.name);
     </script>
 </body>
 </html>
