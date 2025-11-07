@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        // 1. scope of variable
+        // if (9>8){
+        //     let a = 10;
+        //     console.log(a);
+        // }
+        // console.log(a) // this case will always work on var. will work on let. will never work with const. THIS WILL WORK ON LET BECAUSE INSIDE {} A IS DEFINED NOT OUTSIDE
+
+        // // // 2. Initialization
+        // let a;
+        // console.log(a); // this case will always work on var. will not work on let (because a is not defined). will never work with const
+
+        // // 3. Re-declaration
+        // let a = 10;
+        // let a = 20;
+        // console.log(a); // this case will always work on var. will not work on let (because a is defined 2 times). will never work with const
+
+        // // 4. Re-defining
+        // let a = 10;
+        // a = 20;
+        // console.log(a); // this case will always work on var. will work on let (because a is defined). will never work with const
+
+        // // 5. Hoisting
+        // a = 10;
+        // console.log(a);
+        // let a; // this case will always work on var. will not work on let (a could not be accessed before initialization). will never work with const
+    </script>
+</body>
+</html>
