@@ -67,14 +67,17 @@
       console.log(studentc.studentname);
 
       // 6. Factory Function
-      function student(rollno, name) {
+      function studentt(rollno, name) {
         return {
           roll: rollno,
           studentname: name,
         };
       }
-      let studentd = new student(29, "Ramakant Vihari");
+      let studentd = new studentt(29, "Ramakant Vihari");
       console.log(studentd.studentname);
+
+      // 7. Object Assign
+      let studente = Object.assign({}, studentc, studentd);
     </script>
   </body>
 </html>
