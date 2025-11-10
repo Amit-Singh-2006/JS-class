@@ -56,29 +56,25 @@
       let playerr = new Player(30, "Harry");
       console.log(playerr.Playername);
 
-
-
       // 5. Class
-      class student{
-        constructor(rollno, name){
-            this.roll = rollno;
-            this.studentname = name
+      class student {
+        constructor(rollno, name) {
+          this.roll = rollno;
+          this.studentname = name;
         }
       }
       let studentc = new student(28, "Aatma ram tukka ram bhide");
       console.log(studentc.studentname);
 
-
-
       // 6. Factory Function
-      function student(rollno, name){
-        return{
-            roll:rollno,
-            studentname:name
-        }
+      function student(rollno, name) {
+        return {
+          roll: rollno,
+          studentname: name,
+        };
       }
-    let studentd = new student(29, "Ramakant Vihari");
-    console.log(studentd.studentname)
+      let studentd = new student(29, "Ramakant Vihari");
+      console.log(studentd.studentname);
     </script>
   </body>
 </html>
