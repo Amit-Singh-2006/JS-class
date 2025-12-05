@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Mouse Events -->
     <!-- <img src="images/kali-linux.png" alt="Kali Linux">
 
     <script>
@@ -41,6 +42,18 @@
         function Timeless() {
             count++;
             console.log(count);
+        }
+    </script>
+
+    <!-- Keyboard Events : onkeypress, onkeydown, onkeyup -->
+    <!-- <input type="text" onkeypress="Timeless()">
+    <input type="text" onkeydown="Timeless()">
+    <input type="text" onkeyup="Timeless()"> -->
+
+    <input type="text" onclick="generate()" id="id01">
+    <script>
+        function generate(){
+            document.getElementById("id01").style.backgroundColor = "black";
         }
     </script>
 </body>
