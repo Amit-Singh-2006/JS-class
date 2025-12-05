@@ -50,10 +50,24 @@
     <input type="text" onkeydown="Timeless()">
     <input type="text" onkeyup="Timeless()"> -->
 
-    <input type="text" onclick="generate()" id="id01">
+    <!-- <input type="text" onclick="generate()" id="id01"> -->
+
+    <form onsubmit= "submitfunc()">
+        <input type="text" id="id02"> <br>
+        <span id="id03"></span><br>
+        <input type="submit">
+    </form>
+
     <script>
-        function generate(){
-            document.getElementById("id01").style.backgroundColor = "black";
+        // function generate(){
+        //     document.getElementById("id01").style.backgroundColor = "black";
+        // }
+        function submitfunc(){
+            let valid = true;
+            if(document.getElementById("id02").value == ""){
+                document.getElementById("id03").innerText="This field is mandatory";
+                valid=false;
+            };
         }
     </script>
 </body>
