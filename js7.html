@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>events</title>
-     <style>
-        div{
+    <style>
+        div {
             height: 400px;
             width: 400px;
-            background-color:darkslateblue;
+            background-color: darkslateblue;
         }
-     </style>
+    </style>
 </head>
 
 <body>
-    <div onclick= "counter()" height="400" width="400" color="red"><img src="kali_logo.png" height="300" width="300" alt="Kali Linux Logo">
-   </div>
-        <!--onclick ondblclick oncontextmenu onmouseover onmouseout onmousedown onmouseup onmousemove onmouseleave-->
-       <!--
+    <div onclick="counter()" height="400" width="400" color="red"><img src="kali_logo.png" height="300" width="300"
+            alt="Kali Linux Logo">
+    </div>
+    <!--onclick ondblclick oncontextmenu onmouseover onmouseout onmousedown onmouseup onmousemove onmouseleave-->
+    <!--
         onclick = wheneever you click (press and release)
         ondblclick = double click
         oncontextmenu = right click
@@ -42,16 +43,54 @@
         oninvalid = when input is invalid
     
         -->
-   <script>
-//     function generate(){
-//         alert ("There is some event occured  ")
-//     }
-       let count = 0;
-       function counter(){
-           count++;
-           console.log(count);
-       }
+
+    
+    <script>
+        //     function generate(){
+        //         alert ("There is some event occured  ")
+        //     }
+        let count = 0;
+        function counter() {
+            count++;
+            console.log(count);
+        }
+    </script>
+    <!--Keyboard events onkeypress onkeydown onkeyup-->
+    <!-- <input type="text" onkeypress="counter()">
+    <input type="text" onkeyup="counter()">
+    <input type="text" onkeydown="counter()">
+    <input type="text" onfocus="counter()">
+    <input type="text" onblur="counter()">
+    <input type="text" onselect="counter()">
+    <input type="text" onchange="counter()">
+    <input type="text" oninput="counter()">
+    <input type="text" oninvalid="counter()">
+    <script> -->
+    <input type="text"onclick="generate()" id = "id01">
+    <script>
+        function generate(){
+            document.getElementById("id01").style.color = "red";
+            document.getElementById("id01").style.backgroundColor = "lightblue";
+        }
+    </script>
+    <form onsubmit="submitfunc()"></form>
+         <input type="text"name = "id2" id = "id2"> <br><br>
+         <span id = "id3"></span>
+         <input type="Submit">
+
+    <script>
+        function submitfunc(){
+            let valid=true;
+            if(document.getElementById("id2").value==""){
+                alert("Name is required");
+                valid=false;
+            }
+            if(valid){
+                alert("Form is submitted");
+                document.getElementById("id3").innerText = "Form is submitted";
+            }
+        }
     </script>
 </body>
-
+    
 </html>
