@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+        }
+    </style>
 </head>
 <body>
     <script>
         let para = document.createElement("p");
         para.textContent="Hello";
-        document.body.appendChild(para);
-        let text = document.createTextNode("This is something");
-        document.body.appendChild(text);
+        // document.body.appendChild(para);
+        let div = document.createElement("div");
+        document.body.appendChild(div);
+        div.appendChild(para);
+        // let text = document.createTextNode("This is something");
+        // document.body.appendChild(text);
     </script>
 </body>
 </html>
