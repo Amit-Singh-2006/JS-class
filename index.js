@@ -134,14 +134,98 @@ switch (day){
         console.log("Sunday");
         break;
 }
-/*
-Break Statement 
-the break statement exit a loop or switch statement immendiately.
-Exame(in loop):
-for (let i = 1 ; <=5; i++){
-if(i===3){
-break;// stop loop whwn i = 3 }
+
+//Break Statement 
+//the break statement exit a loop or switch statement immendiately.
+//Example(in loop): 
+
+for (let i = 1 ; i <=5; i++){
+if(i===5){
+break;// stop loop when i = 3 }
 }
 console.log(i);
 }
-*/
+
+// Continue Statement 
+//the continue statement skips the current iteration and moves to the next one.
+for(let i = 1; i <=10; i++){
+    if (i === 9){
+        continue; // skip the iteration when i = 9 think if i will equal to 8 then it will continue the loop but 8 will be skiped and not print 
+    }
+    console.log(i);
+}
+// Using Loop Statements in javaScript 
+// there are 3 type of loops ;
+// 1. while loop (the while loop executes a block of code as long as the condition is true  it checks the condition before running the loop.)
+// 2. do...while loop (the do...while loop executes a block of code once, and then repeats the loop as long as the condition is true it checks the condition after running the loop.)
+// 3. for loop (the for loop executes a block of code a specific number of times.)
+// the for loop is used when you know in advance ho many time you want to run the loop.
+// it has three parts:
+// 1. initialization (let i = 0) : it is used to initialize the loop counter.
+// 2. condition (i < 5) : it is used to check the condition before each iteration.
+// 3. increment (i++) : it is used to increment the loop counter after each iteration.
+// Syntax of for loop 
+// for (initialization; condition; increment){
+// code to be executed
+// }
+for (let i = 1; i <= 5; i++){
+    if (i === 3) {
+        continue;
+    }
+    console.log(`Iteration number: ${i}`);
+}
+
+ // Nested Loops 
+ // A loop inside another loop is called a nested loop.
+ for (let i = 1; i <= 3; i++){
+    console.log(`Outer loop iteration: ${i}`);
+    for (let j = 1; j <= 2; j++){
+        console.log(`  Inner loop iteration: ${j}`);
+    }
+ }   
+ // Functon 
+    // A function is a block of code designed to perform a particular task.
+    // It is executed when "something" invokes it (calls it).
+    // Syntax of function 
+    // function functionName(parameters){
+    // code to be executed
+    // }
+    // functionName(arguments);
+
+function greet(){
+    let n = prompt("Enter your name:");
+    
+        alert(`Hello, ${n}! Welcome to my world.`);
+    }
+
+greet();
+
+// Types of functions 
+// 1. Named function 
+function add(c, v){
+    return c + v;
+}
+
+console.log("The sum is: " + add(1 , 2));
+
+// 2. Anonymous function
+let multiply = function(u, i){
+    return u * i;
+};
+let product = multiply(4, 6);
+console.log("The product is: " + product);
+
+// 3. Arrow function
+let subtract = (j, k) => {
+    return j - k;
+};
+let difference = subtract(10, 4);
+console.log("The difference is: " + difference);
+
+let x = 2;
+switch(x) {
+  case 1: console.log("One"); break;
+  case 2: console.log("Two"); break;
+  case 3: console.log("Three"); break;
+}
+
